@@ -42,8 +42,8 @@ class MyThread(threading.Thread):
 def run2(self):
         while True:
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            bytes = random._urandom(20174)
-            pack = random._urandom(1180)
+            bytes = random._urandom(20164)
+            pack = random._urandom(1190)
             msg = Pacotes[random.randrange(0, 1)]
             sock.sendto(bytes, (ip, int(port)))
             sock.sendto(pack, (ip, int(port)))
@@ -60,8 +60,8 @@ def run2(self):
 def run3(self):
         while True:
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            bytes = random._urandom(20174)
-            pack = random._urandom(1180)
+            bytes = random._urandom(20154)
+            pack = random._urandom(1200)
             msg = Pacotes[random.randrange(0, 1)]
             sock.sendto(bytes, (ip, int(port)))
             sock.sendto(pack, (ip, int(port)))
